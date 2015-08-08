@@ -1,12 +1,11 @@
-# Default NAMESPACE created by R
-# Remove the previous line if you edit this file
+exportPattern("^[[:alpha:]]+")
 
-# Export all names
-exportPattern(".")
+importFrom("graphics", "barplot", "segments")
+importFrom("stats", "dgamma", "dnbinom", "dnorm", "model.matrix", "optim", "pnbinom", "rgamma", "rnbinom", "rnorm", "runif", "sd")
+importFrom(coda, as.mcmc, batchSE, heidel.diag, HPDinterval)
+importFrom(bayesm, lndIWishart)
 
-# Import all packages listed as Imports or Depends
-import(
-  MCMCpack,
-  bayesm,
-  mnormt
-)
+# register S3 methods
+S3method(summary, composition)
+S3method(predict, composition)
+S3method(plot, comphat)

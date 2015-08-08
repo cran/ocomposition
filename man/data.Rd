@@ -1,24 +1,18 @@
 \name{data}
 \alias{data}
+
 \docType{data}
+
 \title{Example data}
+
 \description{
-CSES data from modules I-III as an example
+CSES data (modules I-III). The response variable is a matrix of party vote-shares across democracies. The covariate is the average number of electoral districts in a country.
 }
+
 \usage{data(data)}
-\format{\code{datalist}: 
-\code{data$v} - matrix of vote-shares
-\code{data$m} - district magnitude
-}
-\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
-\url{www.cses.org}
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
-}
-\examples{
-}
+
+\format{A list of vote-shares and the list of average electoral districts.}
+
+\source{\url{www.cses.org}}
+
 \keyword{datasets}
